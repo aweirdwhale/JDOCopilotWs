@@ -1,0 +1,62 @@
+@media (max-width: 810px) {
+    #splash{
+        font-size: .7em;
+    }
+    .jdo-content > .jdo-img {
+        position: absolute;
+        top: 19%;
+        left: 50%;
+        width: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .jdo-content > .p {
+        position: absolute;
+        top: 80%;
+        left: 50%;
+        width: 90%;
+        transform: translate(-50%, -50%);
+        color: var(--bleu-clair);
+        font-family: 'Ubuntu Mono', sans-serif;
+        font-size: 1.5em;
+        
+        /*! height: 55%; */
+        background-color: #000000;
+    }
+    .jdo-title > h1 {
+        color: var(--violet);
+        font-family: 'Ubuntu Mono', sans-serif;
+        top: 20%;
+        position: absolute;
+        width: 100%;
+        transform: translateX(-50%);
+        left: 50%;
+    }
+    .meta-link {
+        align-items: start;
+        -webkit-backdrop-filter: blur(3px);
+                backdrop-filter: blur(3px);
+        background-color: rgba(240, 188, 208, 0.5);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        border-radius: 6px;
+        bottom: 10px;
+        box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
+        cursor: pointer;  
+        display: inline-flex;
+        gap: 5px;
+        right: 117px;
+        padding: 10px 20px;
+        position: fixed;
+        text-decoration: none;
+        transition: background-color 400ms, border-color 400ms;
+        z-index: -99;
+        /*! position: fixed; */
+        /*! justify-content: center; */
+        /*! text-align: center; */
+      }.jdo-content > .p > .condition {
+        position: absolute;
+         transform: translate(-70%, 125%);
+        color: var(--rose-pale);
+        font-family: 'Ubuntu Mono', sans-serif;
+        font-size: .5em;
+    }
+}

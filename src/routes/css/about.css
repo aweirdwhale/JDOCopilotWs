@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Ubuntu+Mono&display=swap');
+
+:root{
+  --violet: #cdb4db;
+  --rose-pale: #ffc8dd;
+  --rose: #ffafcc;
+  --bleu-clair: #bde0fe;
+  --bleu: #a2d2ff;
+}
+
+*{
+    cursor: default;
+}
+
+.about-container {
+  text-align: center;
+}
+
+.about {
+  background-color: #000000;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.Hero{
+    position: absolute;
+    right: 8em;
+    width: 700px;
+}
+.Cedric{
+    position: absolute;
+    right: 8em;
+    width: 700px;
+}
+.Thomas{
+    position: absolute;
+    right: 8em;
+    width: 700px;
+}
+.mainP{
+    font-size: 1em;
+    font-family: 'Ubuntu Mono', sans-serif;
+    color: var(--rose-pale);
+    text-align: left;
+}
+
+.pouet{
+    position: relative;
+    top: 50%;
+    left: 0;
+    transform: translate(-30%, 30%);
+    font-size: 2em;
+    font-family: 'Space Mono', monospace;
+    color: var(--rose);
+    text-align: center;
+}
+
+.about-buttons{
+  position: absolute;
+  top: 0;
+}
+.about-buttons > a{
+  padding: 20px;
+  color: var(--rose);
+  text-decoration: none;
+}
+#enabled:hover{
+  color: #FFF;
+}
+
+#disabled{
+    opacity: 0.5;
+}
+
+.slideDown{
+    position: relative;
+    transform: translateX(320px);
+    color: var(--bleu);
+    font-size: 2em;
+    cursor: pointer;
+}
+.slideUp{
+    position: relative;
+    transform: translateX(320px);
+    color: var(--bleu);
+    font-size: 2em;
+    cursor: pointer;
+}
+
+.slideDown:hover{
+    color: #FFF;
+}
+
+#no{
+    opacity: 0;
+}
+
+button{
+    background-color: #000000;
+    border: none;
+    cursor: default;
+}
+
+.progressbar{
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    width: 5px;
+    height: 90%;
+    background-color: var(--rose);
+    z-index: 1;
+    transform: translateY(-50%);
+}
+
+.progressbar > .bubble{
+    position: absolute;
+    top: 50%;
+    left: -15px;
+    width: 35px;
+    height: 35px;
+    background-color: var(--bleu);
+    border-radius: 50%;
+    z-index: 2;
+}
+.progressbar > .bubble1{
+    position: absolute;
+    top: 75%;
+    left: -15px;
+    width: 35px;
+    height: 35px;
+    background-color: var(--bleu);
+    border-radius: 50%;
+    z-index: 2;
+}
+.progressbar > .bubble2{
+    position: absolute;
+    top: 80%;
+    left: -15px;
+    width: 35px;
+    height: 35px;
+    background-color: var(--bleu);
+    border-radius: 50%;
+    z-index: 2;
+}
+.progressbar > .bubble3{
+    position: absolute;
+    top: 85%;
+    left: -15px;
+    width: 35px;
+    height: 35px;
+    background-color: var(--bleu);
+    border-radius: 50%;
+    z-index: 2;
+}
+.progressbar > .bubble4{
+    position: absolute;
+    top: 90%;
+    left: -15px;
+    width: 35px;
+    height: 35px;
+    background-color: var(--bleu);
+    border-radius: 50%;
+    z-index: 2;
+}
+.progressbar > .bubble5{
+    position: absolute;
+    top: 95%;
+    left: -15px;
+    width: 35px;
+    height: 35px;
+    background-color: var(--bleu);
+    border-radius: 50%;
+    z-index: 2;
+}
+
+#active{
+    top: 50%;
+    transform: translateY(-50%) scale(1);
+    /* smooth translate */
+    transition-duration: 1s;
+}
+#up1{
+    position: relative;
+    top: 0;
+    transform: translateY(50%) scale(.5);
+    /* smooth translate */
+    transition-duration: 1s;
+}
+
+#down{
+    transform: translateY(0%) scale(.5);
+    /* smooth translate */
+    transition-duration: 1s;
+}
+
+.img{
+    width: 340px;
+    height: 340px;
+
+    position: absolute;
+    top: 47%;
+    left: 0;
+
+    transform: translate(-115%, -50%);
+}
+
+.contactUs{
+        align-items: center;
+        background-color: transparent;
+        color: #fff;
+        cursor: pointer;
+        display: flex;
+        font-family: ui-sans-serif,system-ui,-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+        font-size: 1rem;
+        font-weight: 700;
+        line-height: 1.5;
+        text-decoration: none;
+        text-transform: uppercase;
+        outline: 0;
+        border: 0;
+        padding: 1rem;
+        width: 30%;
+        transform: translateX(11%);
+}
+
+.contactUs::before{
+    background-color: #fff;
+    content: "";
+    display: inline-block;
+    height: 1px;
+    margin-right: 10px;
+    transition: all .42s cubic-bezier(.25,.8,.25,1);
+    width: 0;
+}
+
+.contactUs:hover::before{
+    width: 3rem;
+}
+
+
