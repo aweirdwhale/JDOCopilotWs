@@ -17,6 +17,7 @@ export default function Landing() {
     "Kaneki sait faire du bon café !",
     "He had a vague sense that trees gave birth to dinosaurs",
     "HAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+    '/25468254156486464deqsferhjkqgyukqeruirgeuiqofgc',
   ]
 
   function randomSplash() {

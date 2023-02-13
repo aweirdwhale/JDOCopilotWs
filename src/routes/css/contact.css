@@ -42,15 +42,15 @@
     color: var(--rose-pale);
     text-decoration: none;
     cursor: pointer;
-    transition: word-spacing 0.5s;
+    transition: font-size 0.5s;
 
 
 }
 
 .contact-box > a:hover{
     color: #FFF;
-    word-spacing: 1em;
-    transition: word-spacing 0.5s;
+    font-size: 2em;
+    transition: font-size 0.5s;
 }
 
 .contact-box :nth-child(4){

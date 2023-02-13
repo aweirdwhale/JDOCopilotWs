@@ -7,6 +7,7 @@ import Landing from './routes/js/landing';
 import ErrorPage from "./routes/js/404";
 import About from './routes/js/about';
 
+import { TerminalContextProvider } from "react-terminal";
 
 import reportWebVitals from './reportWebVitals';
 import {
@@ -17,6 +18,7 @@ import Work from './routes/js/work';
 import Jdocopilot from './routes/js/jdocopilot';
 import Contact from './routes/js/contact';
 import Cgus from './routes/js/cgus';
+import Hecker from './routes/js/hecker';
 
 const router = createBrowserRouter([
   {
@@ -48,13 +50,18 @@ const router = createBrowserRouter([
     path: "cgus/",
     element: <Cgus />,
     errorElement: <ErrorPage />
+  },
+  {
+    path: "25468254156486464deqsferhjkqgyukqeruirgeuiqofgc/",
+    element: <Hecker />,
+    errorElement: <ErrorPage />
   }
 ]);
 
 ReactDOM.createRoot(document.getElementById("root")).render(
-  <React.StrictMode>
+  <TerminalContextProvider>
     <RouterProvider router={router} />
-  </React.StrictMode>
+  </TerminalContextProvider>
 );
 
 // If you want to start measuring performance in your app, pass a function

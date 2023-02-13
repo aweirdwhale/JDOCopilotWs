@@ -21,7 +21,7 @@ const images = [
 ]
 
 
-
+const delay = ms => new Promise(res => setTimeout(res, ms));
 
 export default function About(){
     const [count, setCount] = useState(0)
@@ -91,7 +91,8 @@ export default function About(){
         idOf5 = 'up1';
         idOf6 = 'active';
     }
-    
+
+
     return(
         <div className="about-container">
             <div className='progressbar'>
